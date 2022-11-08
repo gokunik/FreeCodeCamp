@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page FreeCodeCamp Project | GokuNik</title>
+    <meta
+      name="description"
+      content="Product Landing Page project for free code camp responsive web design certification"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="200">
+    <header id="header">
+      <!-- Navbar -->
+      <nav
+        id="nav-bar"
+        class="navbar px-4 px-md-5 navbar-expand-sm justify-content-between bg-light navbar-light fixed-top"
+      >
+        <!-- Logo -->
+        <a class="navbar-brand" id="logo" href="#">
+          <img
+            id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="original trombones logo"
+            style="width: 200px"
+          />
+        </a>
+
+        <!-- Mobile menu toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mobileMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Social Icons -->
+        <div class="collapse navbar-collapse flex-grow-0" id="mobileMenu">
+          <ul class="navbar-nav pt-4 py-sm-0 justify-content-around flex-row">
+            <li class="nav-item">
+              <a href="#features" class="nav-link">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#how-it-works" class="nav-link">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main section starts here -->
+
+    <main>
+      <!-- Main Banner -->
+      <section id="hero" class="flex-center">
+        <div class="text-center hero-content">
+          <h1 class="main-heading">
+            <span>H</span>andcrafted <span>H</span>omemade
+            <span>M</span>asterpieces
+          </h1>
+          <div>
+            <form
+              action="https://www.freecodecamp.com/email-submit"
+              class="form-group"
+              id="form"
+            >
+              <label for="email">
+                <input
+                  type="email"
+                  placeholder="Enter your Email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </label>
+              <button type="submit" id="submit" class="btn btn-warning">
+                Get started
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="explore text-center">
+          <a href="#features">
+            <i class="fa fa-2x fa-angle-double-up"></i>
+            <p>Explore</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="features" class="flex-center flex-column">
+        <h2 class="section-heading">Features</h2>
+        <div class="card-wrapper container d-flex">
+          <article class="card">
+            <div class="card-icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="card-body">
+              <h2 class="card-title">Premium Materials</h2>
+              <p class="card-text">
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase. Lorem ipsum
+                dolor sit..
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="card-body">
+              <h2 class="card-title">Fast shipping</h2>
+              <p class="card-text">
+                We make sure you recieve your trombone as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-icon"><i class="fa fa-3x fa-battery"></i></div>
+            <div class="card-body">
+              <h2 class="card-title">Quality Assurance</h2>
+              <p class="card-text">
+                For every purchase you make, we will ensure there are no damages
+                or faults and we will check and test the pitch of your
+                instrument.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Youtube Video Section -->
+      <section id="how-it-works">
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+
+      <!-- Pricing Sections -->
+      <section id="pricing" class="flex-center">
+        <!-- Price card 1 -->
+        <article class="pricing-card">
+          <div class="pricing-type">
+            <p>Basic</p>
+          </div>
+          <div class="pricing-header">
+            <h3>Tenor Trombone</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+              eum.
+            </p>
+          </div>
+
+          <div class="pricing-body">
+            <ul class="card-features">
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum.</li>
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum.</li>
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum dolor.</li>
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum.</li>
+            </ul>
+            <h4><strong>$600</strong><small> -10% off</small></h4>
+          </div>
+
+          <div class="text-center mt-3 mb-2">
+            <button class="btn btn-outline-dark">Select</button>
+          </div>
+        </article>
+
+        <!-- Price card 2 -->
+        <article class="pricing-card">
+          <div class="most-popular text-right">
+            <p>Most Popular</p>
+          </div>
+          <div class="pricing-header">
+            <h3 class="text-white">Bass Trombone</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+              eum.
+            </p>
+          </div>
+
+          <div class="pricing-body">
+            <ul class="card-features">
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum.</li>
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum.</li>
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum dolor.</li>
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum.</li>
+            </ul>
+            <h4 class="text-center"><strong>$900</strong></h4>
+          </div>
+
+          <div class="text-center mt-3">
+            <button class="btn btn-outline-light">Select</button>
+          </div>
+        </article>
+
+        <!-- Price card 3 -->
+        <article class="pricing-card">
+          <div class="pricing-type">
+            <p>Premium</p>
+          </div>
+          <div class="pricing-header">
+            <h3>Valve Trombone</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
+              eum.
+            </p>
+          </div>
+          <div class="pricing-body">
+            <ul class="card-features">
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum.</li>
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum.</li>
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum dolor.</li>
+              <li><i class="fa fa-check-circle"></i> Lorem, ipsum.</li>
+            </ul>
+            <h4><strong>$1200 </strong><small> - 10% off</small></h4>
+          </div>
+          <div class="text-center mt-3">
+            <button class="btn btn-outline-dark">Select</button>
+          </div>
+        </article>
+      </section>
+
+      <!-- Footer for the landing Page -->
+
+      <section class="footer">
+        <div class="text-right">
+          <ul>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Contact</li>
+          </ul>
+          <p>Copyright 2016, Original Trombones</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer  -->
+    <footer class="bg-dark">
+      <p class="container text-center text-white-50 my-2">
+        Made by
+        <a class="text-white" href="https://github.com/gokunik" target="_blank">
+          GokuNik
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

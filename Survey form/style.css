@@ -1,0 +1,99 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/* font-family: 'Glory', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+/* Base styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+      115deg,
+      rgba(71, 69, 69, 0.6),
+      rgba(30, 2, 36, 0.5)
+    ),
+    url(https://picsum.photos/1600?grayscale);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+:root {
+  --heading-font: "Glory", sans-serif;
+  --primary-font: "Poppins", sans-serif;
+}
+
+a {
+  color: whitesmoke;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+footer {
+  margin-top: auto;
+  z-index: 2;
+}
+
+footer p a:hover {
+  border-bottom: 2px solid whitesmoke;
+}
+
+/* header and navbar */
+
+#logo.navbar-brand {
+  font-weight: 500;
+  font-size: 22px;
+}
+.nav-item a {
+  padding: 10px;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.nav-item a:hover {
+  transform: translateY(-2px) scale(1.2);
+}
+
+#title {
+  font-size: clamp(1.8rem, 6.5vw, 3rem);
+  color: white;
+  border-bottom: 10px dashed rgba(255, 255, 255, 0.7);
+  width: max-content;
+  margin: auto;
+}
+#description {
+  font-size: clamp(11px, 2vw, 15px);
+  color: whitesmoke;
+}
+
+.form-wrapper {
+  max-width: 500px;
+  margin-bottom: 30px;
+  background-color: rgba(34, 33, 33, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 3px;
+}
